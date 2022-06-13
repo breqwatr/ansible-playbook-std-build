@@ -1,0 +1,35 @@
+---
+
+- name: ssh-hardening
+  src: git@github.com:breqwatr/ssh-hardening.git
+  scm: git
+
+- name: os-hardening
+  src: git@github.com:breqwatr/os-hardening.git
+  scm: git
+
+- src: arillso.logrotate
+
+- src: geerlingguy.repo-epel
+
+- src: geerlingguy.ntp
+
+- name: breqwatr-role-motd
+  src: git@github.com:breqwatr/breqwatr-role-motd.git
+  scm: git
+
+- name: breqwatr-role-users
+  src: git@github.com:breqwatr/breqwatr-role-users.git
+  scm: git
+
+- name: breqwatr-role-common
+  src: git@github.com:breqwatr/breqwatr-role-common.git
+  scm: git
+
+- name: ansible-disable-selinux
+  src: https://github.com/stardata/ansible-disable-selinux.git
+  scm: git
+
+- name: ansible-resolv
+  src: https://github.com/ahuffman/ansible-resolv
+  scm: git
