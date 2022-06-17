@@ -1,0 +1,41 @@
+---
+# Upgrade RHEL family OS packages
+- name: Upgrade RHEL Family OS packages
+  yum:
+    name: '*'
+    state: latest
+  when: ansible_os_family == "RedHat"
+# Debian Family upgrade
+- name: Update repositories cache
+  apt:
+    update_cache: yes
+  when: ansible_os_family == "Debian"
+- name: Update all packages to their latest version
+  apt:
+    name: "*"
+    state: latest
+  when: ansible_os_family == "Debian"
+- name: Upgrade the OS (apt-get dist-upgrade)
+  apt:
+    upgrade: dist
+  when: ansible_os_family == "Debian"
+- name: add docker repository (CentOS)
+  yum_repository:
+    name: epel
+    description: EPEL YUM repo
+    baseurl: https://download.docker.com/linux/centos/docker-ce.repo
+  when: ansible_os_family == "RedHat"
+- name: Add docker repository into sources list
+  ansible.builtin.apt_repository:
+    repo: deb https://download.docker.com/linux/debian stable
+    state: present
+  when: ansible_os_family == "Debian"
+- name: install latest version of docker and python3
+  ansible.builtin.package:
+    name:
+      - python3
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+      - docker-compose-plugin
+    state: latest

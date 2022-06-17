@@ -1,11 +1,11 @@
 ---
 
-- name: ssh-hardening
-  src: git@github.com:breqwatr/ssh-hardening.git
+- name: ssh_hardening
+  src: https://github.com/dev-sec/ansible-collection-hardening.git
   scm: git
 
-- name: os-hardening
-  src: git@github.com:breqwatr/os-hardening.git
+- name: os_hardening
+  src: https://github.com/dev-sec/ansible-collection-hardening.git
   scm: git
 
 - src: arillso.logrotate
@@ -14,13 +14,12 @@
 
 - src: geerlingguy.ntp
 
-- name: breqwatr-role-motd
-  src: git@github.com:breqwatr/breqwatr-role-motd.git
+- name: motd
+  src: https://github.com/justereseau/ansible-role-linux-motd.git
   scm: git
 
 - name: breqwatr-role-users
-  src: git@github.com:breqwatr/breqwatr-role-users.git
-  scm: git
+  src: ./roles/breqware-role-users/
 
 - name: breqwatr-role-common
   src: git@github.com:breqwatr/breqwatr-role-common.git

@@ -1,0 +1,593 @@
+2022-06-15 00:35:49,705 p=5077 u=root |  ERROR! Missing required action
+2022-06-15 00:39:17,566 p=5197 u=root |  - extracting ssh_hardening to /home/ubuntu/.ansible/roles/ssh_hardening
+2022-06-15 00:39:17,586 p=5197 u=root |  - ssh_hardening was installed successfully
+2022-06-15 00:39:18,200 p=5197 u=root |  - extracting os_hardening to /home/ubuntu/.ansible/roles/os_hardening
+2022-06-15 00:39:18,221 p=5197 u=root |  - os_hardening was installed successfully
+2022-06-15 00:39:18,415 p=5197 u=root |  - downloading role 'logrotate', owned by arillso
+2022-06-15 00:39:18,933 p=5197 u=root |  - downloading role from https://github.com/arillso/ansible.logrotate/archive/1.6.1.tar.gz
+2022-06-15 00:39:19,406 p=5197 u=root |  - extracting arillso.logrotate to /home/ubuntu/.ansible/roles/arillso.logrotate
+2022-06-15 00:39:19,410 p=5197 u=root |  - arillso.logrotate (1.6.1) was installed successfully
+2022-06-15 00:39:19,527 p=5197 u=root |  - downloading role 'repo-epel', owned by geerlingguy
+2022-06-15 00:39:19,849 p=5197 u=root |  - downloading role from https://github.com/geerlingguy/ansible-role-repo-epel/archive/3.1.0.tar.gz
+2022-06-15 00:39:20,308 p=5197 u=root |  - extracting geerlingguy.repo-epel to /home/ubuntu/.ansible/roles/geerlingguy.repo-epel
+2022-06-15 00:39:20,312 p=5197 u=root |  - geerlingguy.repo-epel (3.1.0) was installed successfully
+2022-06-15 00:39:20,388 p=5197 u=root |  - downloading role 'ntp', owned by geerlingguy
+2022-06-15 00:39:20,975 p=5197 u=root |  - downloading role from https://github.com/geerlingguy/ansible-role-ntp/archive/2.3.1.tar.gz
+2022-06-15 00:39:21,434 p=5197 u=root |  - extracting geerlingguy.ntp to /home/ubuntu/.ansible/roles/geerlingguy.ntp
+2022-06-15 00:39:21,438 p=5197 u=root |  - geerlingguy.ntp (2.3.1) was installed successfully
+2022-06-15 00:42:30,147 p=5197 u=root |   [WARNING]: - breqwatr-role-motd was NOT installed successfully: - command git clone git@github.com:breqwatr/breqwatr-role-motd.git breqwatr-role-motd failed in
+directory /tmp/tmpcCRKrR (rc=128)
+
+2022-06-15 00:42:30,149 p=5197 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-16 02:44:27,428 p=7886 u=root |  - ssh_hardening is already installed, skipping.
+2022-06-16 02:44:27,432 p=7886 u=root |  - os_hardening is already installed, skipping.
+2022-06-16 02:44:27,438 p=7886 u=root |   [WARNING]: - arillso.logrotate (1.6.1) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:44:27,441 p=7886 u=root |   [WARNING]: - geerlingguy.repo-epel (3.1.0) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:44:27,445 p=7886 u=root |   [WARNING]: - geerlingguy.ntp (2.3.1) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:44:27,853 p=7886 u=root |   [WARNING]: - breqwatr-role-motd was NOT installed successfully: - command git clone git@github.com:breqwatr/breqwatr-role-motd.git breqwatr-role-motd failed in
+directory /tmp/tmpi8PjdE (rc=128)
+
+2022-06-16 02:44:27,864 p=7886 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-16 02:46:10,075 p=7956 u=root |  - ssh_hardening is already installed, skipping.
+2022-06-16 02:46:10,075 p=7956 u=root |  - os_hardening is already installed, skipping.
+2022-06-16 02:46:10,077 p=7956 u=root |   [WARNING]: - arillso.logrotate (1.6.1) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:46:10,077 p=7956 u=root |   [WARNING]: - geerlingguy.repo-epel (3.1.0) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:46:10,078 p=7956 u=root |   [WARNING]: - geerlingguy.ntp (2.3.1) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:46:10,854 p=7956 u=root |  - extracting motd to /home/ubuntu/.ansible/roles/motd
+2022-06-16 02:46:10,857 p=7956 u=root |  - motd was installed successfully
+2022-06-16 02:46:11,134 p=7956 u=root |   [WARNING]: - breqwatr-role-users was NOT installed successfully: - command git clone git@github.com:breqwatr/breqwatr-role-users.git breqwatr-role-users failed in
+directory /tmp/tmpxzMJuH (rc=128)
+
+2022-06-16 02:46:11,137 p=7956 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-16 02:46:35,694 p=7974 u=root |  - ssh_hardening is already installed, skipping.
+2022-06-16 02:46:35,694 p=7974 u=root |  - os_hardening is already installed, skipping.
+2022-06-16 02:46:35,696 p=7974 u=root |   [WARNING]: - arillso.logrotate (1.6.1) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:46:35,696 p=7974 u=root |   [WARNING]: - geerlingguy.repo-epel (3.1.0) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:46:35,697 p=7974 u=root |   [WARNING]: - geerlingguy.ntp (2.3.1) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:46:35,697 p=7974 u=root |  - motd is already installed, skipping.
+2022-06-16 02:46:35,977 p=7974 u=root |   [WARNING]: - breqwatr-role-users was NOT installed successfully: - command git clone git@github.com:breqwatr/breqwatr-role-users.git breqwatr-role-users failed in
+directory /tmp/tmpbIWJu_ (rc=128)
+
+2022-06-16 02:46:35,980 p=7974 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-16 02:55:58,449 p=7995 u=root |  - ssh_hardening is already installed, skipping.
+2022-06-16 02:55:58,450 p=7995 u=root |  - os_hardening is already installed, skipping.
+2022-06-16 02:55:58,451 p=7995 u=root |   [WARNING]: - arillso.logrotate (1.6.1) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:55:58,452 p=7995 u=root |   [WARNING]: - geerlingguy.repo-epel (3.1.0) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:55:58,453 p=7995 u=root |   [WARNING]: - geerlingguy.ntp (2.3.1) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:55:58,454 p=7995 u=root |  - motd is already installed, skipping.
+2022-06-16 02:55:58,658 p=7995 u=root |  - downloading role '/roles/breqwatr-role-users', owned by 
+2022-06-16 02:55:59,104 p=7995 u=root |   [WARNING]: - breqwatr-role-users was NOT installed successfully: Content has no field named 'owner'
+
+2022-06-16 02:55:59,106 p=7995 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-16 02:56:51,314 p=8018 u=root |  - ssh_hardening is already installed, skipping.
+2022-06-16 02:56:51,314 p=8018 u=root |  - os_hardening is already installed, skipping.
+2022-06-16 02:56:51,316 p=8018 u=root |   [WARNING]: - arillso.logrotate (1.6.1) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:56:51,317 p=8018 u=root |   [WARNING]: - geerlingguy.repo-epel (3.1.0) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:56:51,317 p=8018 u=root |   [WARNING]: - geerlingguy.ntp (2.3.1) is already installed - use --force to change version to unspecified
+
+2022-06-16 02:56:51,318 p=8018 u=root |  - motd is already installed, skipping.
+2022-06-16 02:56:51,468 p=8018 u=root |  - downloading role '/roles/', owned by 
+2022-06-16 02:56:51,614 p=8018 u=root |   [WARNING]: - breqwatr-role-users was NOT installed successfully: Content has no field named 'owner'
+
+2022-06-16 02:56:51,616 p=8018 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-16 03:00:55,093 p=8075 u=root |  - ssh_hardening is already installed, skipping.
+2022-06-16 03:00:55,094 p=8075 u=root |  - os_hardening is already installed, skipping.
+2022-06-16 03:00:55,095 p=8075 u=root |   [WARNING]: - arillso.logrotate (1.6.1) is already installed - use --force to change version to unspecified
+
+2022-06-16 03:00:55,096 p=8075 u=root |   [WARNING]: - geerlingguy.repo-epel (3.1.0) is already installed - use --force to change version to unspecified
+
+2022-06-16 03:00:55,097 p=8075 u=root |   [WARNING]: - geerlingguy.ntp (2.3.1) is already installed - use --force to change version to unspecified
+
+2022-06-16 03:00:55,097 p=8075 u=root |  - motd is already installed, skipping.
+2022-06-16 03:00:55,558 p=8075 u=root |  - downloading role '/roles/breqware-role-users/', owned by 
+2022-06-16 03:01:14,875 p=8075 u=root |   [WARNING]: - breqwatr-role-users was NOT installed successfully: Content has no field named 'owner'
+
+2022-06-16 03:01:14,877 p=8075 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-16 03:02:47,910 p=8142 u=root |  ERROR! the role 'os-hardening' was not found in /home/ubuntu/ansible/ansible-playbook-std-build/roles:/home/ubuntu/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/ubuntu/ansible/ansible-playbook-std-build
+
+The error appears to have been in '/home/ubuntu/ansible/ansible-playbook-std-build/std-linux-build.yml': line 17, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+#
+  - { role: os-hardening,          tags: [ 'security' ] }
+    ^ here
+
+2022-06-16 03:04:21,307 p=8186 u=root |   ____________
+< PLAY [all] >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:04:21,420 p=8186 u=root |   ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:04:21,420 p=8186 u=root |  Thursday 16 June 2022  03:04:21 +0000 (0:00:00.327)       0:00:00.327 ********* 
+2022-06-16 03:04:21,997 p=8186 u=root |  fatal: [10.20.254.175]: UNREACHABLE! => {"changed": false, "msg": "SSH Error: data could not be sent to remote host \"10.20.254.175\". Make sure this host can be reached over ssh", "unreachable": true}
+2022-06-16 03:04:22,001 p=8186 u=root |  	to retry, use: --limit @/home/ubuntu/ansible/ansible-playbook-std-build/logs/retry/std-linux-build.retry
+
+2022-06-16 03:04:22,025 p=8186 u=root |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:04:22,026 p=8186 u=root |  10.20.254.175              : ok=0    changed=0    unreachable=1    failed=0   
+2022-06-16 03:04:22,026 p=8186 u=root |  Thursday 16 June 2022  03:04:22 +0000 (0:00:00.605)       0:00:00.933 ********* 
+2022-06-16 03:04:22,026 p=8186 u=root |  =============================================================================== 
+2022-06-16 03:04:22,026 p=8186 u=root |  Gathering Facts --------------------------------------------------------------------------------------------------------------------------------------------------- 0.61s
+2022-06-16 03:06:37,072 p=8236 u=root |   ____________
+< PLAY [all] >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:06:37,115 p=8236 u=root |   ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:06:37,115 p=8236 u=root |  Thursday 16 June 2022  03:06:37 +0000 (0:00:00.103)       0:00:00.103 ********* 
+2022-06-16 03:06:38,443 p=8236 u=root |  fatal: [10.20.254.175]: UNREACHABLE! => {"changed": false, "msg": "SSH Error: data could not be sent to remote host \"10.20.254.175\". Make sure this host can be reached over ssh", "unreachable": true}
+2022-06-16 03:06:38,448 p=8236 u=root |  	to retry, use: --limit @/home/ubuntu/ansible/ansible-playbook-std-build/logs/retry/std-linux-build.retry
+
+2022-06-16 03:06:38,470 p=8236 u=root |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:06:38,471 p=8236 u=root |  10.20.254.175              : ok=0    changed=0    unreachable=1    failed=0   
+2022-06-16 03:06:38,471 p=8236 u=root |  Thursday 16 June 2022  03:06:38 +0000 (0:00:01.355)       0:00:01.459 ********* 
+2022-06-16 03:06:38,471 p=8236 u=root |  =============================================================================== 
+2022-06-16 03:06:38,471 p=8236 u=root |  Gathering Facts --------------------------------------------------------------------------------------------------------------------------------------------------- 1.36s
+2022-06-16 03:07:52,547 p=8288 u=root |   ____________
+< PLAY [all] >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:07:52,585 p=8288 u=root |   ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:07:52,586 p=8288 u=root |  Thursday 16 June 2022  03:07:52 +0000 (0:00:00.093)       0:00:00.094 ********* 
+2022-06-16 03:07:53,901 p=8288 u=root |  fatal: [10.20.254.175]: UNREACHABLE! => {"changed": false, "msg": "SSH Error: data could not be sent to remote host \"10.20.254.175\". Make sure this host can be reached over ssh", "unreachable": true}
+2022-06-16 03:07:53,906 p=8288 u=root |  	to retry, use: --limit @/home/ubuntu/ansible/ansible-playbook-std-build/logs/retry/std-linux-build.retry
+
+2022-06-16 03:07:53,928 p=8288 u=root |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:07:53,929 p=8288 u=root |  10.20.254.175              : ok=0    changed=0    unreachable=1    failed=0   
+2022-06-16 03:07:53,929 p=8288 u=root |  Thursday 16 June 2022  03:07:53 +0000 (0:00:01.343)       0:00:01.437 ********* 
+2022-06-16 03:07:53,929 p=8288 u=root |  =============================================================================== 
+2022-06-16 03:07:53,929 p=8288 u=root |  Gathering Facts --------------------------------------------------------------------------------------------------------------------------------------------------- 1.34s
+2022-06-16 03:08:54,014 p=8339 u=root |   ____________
+< PLAY [all] >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:08:54,058 p=8339 u=root |   ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:08:54,058 p=8339 u=root |  Thursday 16 June 2022  03:08:54 +0000 (0:00:00.102)       0:00:00.103 ********* 
+2022-06-16 03:08:55,349 p=8339 u=root |  fatal: [ansible-test-host1-ubuntu]: UNREACHABLE! => {"changed": false, "msg": "SSH Error: data could not be sent to remote host \"ansible-test-host1-ubuntu\". Make sure this host can be reached over ssh", "unreachable": true}
+2022-06-16 03:08:55,354 p=8339 u=root |  	to retry, use: --limit @/home/ubuntu/ansible/ansible-playbook-std-build/logs/retry/std-linux-build.retry
+
+2022-06-16 03:08:55,376 p=8339 u=root |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:08:55,377 p=8339 u=root |  ansible-test-host1-ubuntu  : ok=0    changed=0    unreachable=1    failed=0   
+2022-06-16 03:08:55,377 p=8339 u=root |  Thursday 16 June 2022  03:08:55 +0000 (0:00:01.318)       0:00:01.421 ********* 
+2022-06-16 03:08:55,377 p=8339 u=root |  =============================================================================== 
+2022-06-16 03:08:55,377 p=8339 u=root |  Gathering Facts --------------------------------------------------------------------------------------------------------------------------------------------------- 1.32s
+2022-06-16 03:12:02,529 p=8373 u=root |   ____________
+< PLAY [all] >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:12:02,571 p=8373 u=root |   ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:12:02,571 p=8373 u=root |  Thursday 16 June 2022  03:12:02 +0000 (0:00:00.103)       0:00:00.103 ********* 
+2022-06-16 03:12:03,906 p=8373 u=root |  fatal: [ansible-test-host1-ubuntu]: FAILED! => {"changed": false, "module_stderr": "/bin/sh: 1: /usr/bin/python: not found\n", "module_stdout": "", "msg": "MODULE FAILURE", "rc": 127}
+2022-06-16 03:12:03,910 p=8373 u=root |  	to retry, use: --limit @/home/ubuntu/ansible/ansible-playbook-std-build/logs/retry/std-linux-build.retry
+
+2022-06-16 03:12:03,937 p=8373 u=root |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-16 03:12:03,937 p=8373 u=root |  ansible-test-host1-ubuntu  : ok=0    changed=0    unreachable=0    failed=1   
+2022-06-16 03:12:03,937 p=8373 u=root |  Thursday 16 June 2022  03:12:03 +0000 (0:00:01.366)       0:00:01.469 ********* 
+2022-06-16 03:12:03,937 p=8373 u=root |  =============================================================================== 
+2022-06-16 03:12:03,938 p=8373 u=root |  Gathering Facts --------------------------------------------------------------------------------------------------------------------------------------------------- 1.37s
+2022-06-16 23:43:07,744 p=16326 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/ubuntu/ansible/ansible-playbook-std-build/roles/breqwatr-role-users/tasks/main.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Create Arcusadmin User
+  ^ here
+
+2022-06-16 23:45:02,387 p=16370 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/ubuntu/ansible/ansible-playbook-std-build/roles/breqwatr-role-users/tasks/main.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Create Arcusadmin User
+  ^ here
+
+2022-06-16 23:52:01,762 p=16403 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/ubuntu/ansible/ansible-playbook-std-build/roles/breqwatr-role-users/tasks/main.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Create Arcusadmin User
+  ^ here
+
+2022-06-16 23:55:23,428 p=16417 u=root |  - downloading role 'collection', owned by 
+2022-06-16 23:55:23,576 p=16417 u=root |   [WARNING]: - collection was NOT installed successfully: Content has no field named 'owner'
+
+2022-06-16 23:55:23,583 p=16417 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-16 23:56:32,461 p=16442 u=root |  - downloading role 'collection', owned by 
+2022-06-16 23:56:32,612 p=16442 u=root |   [WARNING]: - collection was NOT installed successfully: Content has no field named 'owner'
+
+2022-06-16 23:56:32,614 p=16442 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-16 23:56:37,432 p=16449 u=root |  ERROR! Missing required action
+2022-06-16 23:57:39,343 p=16485 u=root |  - downloading role 'builtin', owned by ansible
+2022-06-16 23:57:39,505 p=16485 u=root |   [WARNING]: - ansible.builtin was NOT installed successfully: - sorry, ansible.builtin was not found on https://galaxy.ansible.com.
+
+2022-06-16 23:57:39,507 p=16485 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-16 23:58:45,036 p=16492 u=root |  - downloading role 'builtin', owned by 
+2022-06-16 23:58:45,178 p=16492 u=root |   [WARNING]: - builtin was NOT installed successfully: Content has no field named 'owner'
+
+2022-06-16 23:58:45,180 p=16492 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-16 23:58:50,651 p=16499 u=root |  - downloading role 'Builtin', owned by 
+2022-06-16 23:58:50,743 p=16499 u=root |   [WARNING]: - Builtin was NOT installed successfully: Content has no field named 'owner'
+
+2022-06-16 23:58:50,745 p=16499 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-16 23:59:21,253 p=16514 u=root |  - downloading role 'posix', owned by 
+2022-06-16 23:59:21,407 p=16514 u=root |   [WARNING]: - posix was NOT installed successfully: Content has no field named 'owner'
+
+2022-06-16 23:59:21,409 p=16514 u=root |  ERROR! - you can use --ignore-errors to skip failed roles and finish processing the list.
+2022-06-17 00:04:11,928 p=16521 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/ubuntu/ansible/ansible-playbook-std-build/roles/breqwatr-role-users/tasks/main.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Create Arcusadmin User
+  ^ here
+
+2022-06-17 00:04:29,744 p=16531 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/ubuntu/ansible/ansible-playbook-std-build/roles/breqwatr-role-users/tasks/main.yml': line 3, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Create Arcusadmin User
+  ^ here
+
+2022-06-17 00:05:58,199 p=16542 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/ubuntu/ansible/ansible-playbook-std-build/roles/breqwatr-role-users/tasks/main.yml': line 3, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- ansible.builtin.user:
+  ^ here
+
+2022-06-17 00:13:20,870 p=16552 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/ubuntu/ansible/ansible-playbook-std-build/roles/breqwatr-role-users/tasks/main.yml': line 5, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Set authorized key taken from file
+  ^ here
+
+2022-06-17 00:14:57,811 p=16563 u=root |   ____________
+< PLAY [all] >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:14:57,874 p=16563 u=root |   ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:14:57,875 p=16563 u=root |  Friday 17 June 2022  00:14:57 +0000 (0:00:00.159)       0:00:00.159 *********** 
+2022-06-17 00:14:59,493 p=16563 u=root |  fatal: [ansible-test-host1-ubuntu]: UNREACHABLE! => {"changed": false, "msg": "SSH Error: data could not be sent to remote host \"ansible-test-host1-ubuntu\". Make sure this host can be reached over ssh", "unreachable": true}
+2022-06-17 00:14:59,497 p=16563 u=root |  	to retry, use: --limit @/home/ubuntu/ansible/ansible-playbook-std-build/logs/retry/std-linux-build.retry
+
+2022-06-17 00:14:59,522 p=16563 u=root |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:14:59,522 p=16563 u=root |  ansible-test-host1-ubuntu  : ok=0    changed=0    unreachable=1    failed=0   
+2022-06-17 00:14:59,522 p=16563 u=root |  Friday 17 June 2022  00:14:59 +0000 (0:00:01.647)       0:00:01.807 *********** 
+2022-06-17 00:14:59,522 p=16563 u=root |  =============================================================================== 
+2022-06-17 00:14:59,523 p=16563 u=root |  Gathering Facts --------------------------------------------------------------------------------------------------------------------------------------------------- 1.65s
+2022-06-17 00:20:00,104 p=16583 u=root |  ERROR! You must specify a playbook file to run
+2022-06-17 00:20:37,566 p=16588 u=root |   ____________
+< PLAY [all] >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:20:37,606 p=16588 u=root |   ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:20:37,607 p=16588 u=root |  Friday 17 June 2022  00:20:37 +0000 (0:00:00.097)       0:00:00.097 *********** 
+2022-06-17 00:20:38,942 p=16588 u=root |  fatal: [ansible-test-host1-ubuntu]: UNREACHABLE! => {"changed": false, "msg": "SSH Error: data could not be sent to remote host \"ansible-test-host1-ubuntu\". Make sure this host can be reached over ssh", "unreachable": true}
+2022-06-17 00:20:38,947 p=16588 u=root |  	to retry, use: --limit @/home/ubuntu/ansible/ansible-playbook-std-build/logs/retry/std-linux-build.retry
+
+2022-06-17 00:20:38,969 p=16588 u=root |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:20:38,969 p=16588 u=root |  ansible-test-host1-ubuntu  : ok=0    changed=0    unreachable=1    failed=0   
+2022-06-17 00:20:38,969 p=16588 u=root |  Friday 17 June 2022  00:20:38 +0000 (0:00:01.362)       0:00:01.459 *********** 
+2022-06-17 00:20:38,969 p=16588 u=root |  =============================================================================== 
+2022-06-17 00:20:38,969 p=16588 u=root |  Gathering Facts --------------------------------------------------------------------------------------------------------------------------------------------------- 1.36s
+2022-06-17 00:20:54,788 p=16622 u=root |   ____________
+< PLAY [all] >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:20:54,829 p=16622 u=root |   ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:20:54,830 p=16622 u=root |  Friday 17 June 2022  00:20:54 +0000 (0:00:00.101)       0:00:00.101 *********** 
+2022-06-17 00:20:55,254 p=16622 u=root |  fatal: [10.20.254.237]: UNREACHABLE! => {"changed": false, "msg": "SSH Error: data could not be sent to remote host \"10.20.254.237\". Make sure this host can be reached over ssh", "unreachable": true}
+2022-06-17 00:20:55,256 p=16622 u=root |  	to retry, use: --limit @/home/ubuntu/ansible/ansible-playbook-std-build/logs/retry/std-linux-build.retry
+
+2022-06-17 00:20:55,279 p=16622 u=root |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:20:55,279 p=16622 u=root |  10.20.254.237              : ok=0    changed=0    unreachable=1    failed=0   
+2022-06-17 00:20:55,279 p=16622 u=root |  Friday 17 June 2022  00:20:55 +0000 (0:00:00.449)       0:00:00.550 *********** 
+2022-06-17 00:20:55,279 p=16622 u=root |  =============================================================================== 
+2022-06-17 00:20:55,279 p=16622 u=root |  Gathering Facts --------------------------------------------------------------------------------------------------------------------------------------------------- 0.45s
+2022-06-17 00:22:22,502 p=16683 u=root |   ____________
+< PLAY [all] >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:22:22,545 p=16683 u=root |   ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:22:22,545 p=16683 u=root |  Friday 17 June 2022  00:22:22 +0000 (0:00:00.101)       0:00:00.101 *********** 
+2022-06-17 00:22:23,199 p=16683 u=root |  fatal: [10.20.254.237]: FAILED! => {"changed": false, "module_stderr": "/bin/sh: /usr/bin/python: No such file or directory\n", "module_stdout": "", "msg": "MODULE FAILURE", "rc": 127}
+2022-06-17 00:22:23,202 p=16683 u=root |  	to retry, use: --limit @/home/ubuntu/ansible/ansible-playbook-std-build/logs/retry/std-linux-build.retry
+
+2022-06-17 00:22:23,224 p=16683 u=root |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:22:23,224 p=16683 u=root |  10.20.254.237              : ok=0    changed=0    unreachable=0    failed=1   
+2022-06-17 00:22:23,225 p=16683 u=root |  Friday 17 June 2022  00:22:23 +0000 (0:00:00.679)       0:00:00.780 *********** 
+2022-06-17 00:22:23,225 p=16683 u=root |  =============================================================================== 
+2022-06-17 00:22:23,225 p=16683 u=root |  Gathering Facts --------------------------------------------------------------------------------------------------------------------------------------------------- 0.68s
+2022-06-17 00:24:38,616 p=16709 u=root |   ____________
+< PLAY [all] >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:24:38,651 p=16709 u=root |   ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:24:38,651 p=16709 u=root |  Friday 17 June 2022  00:24:38 +0000 (0:00:00.091)       0:00:00.091 *********** 
+2022-06-17 00:24:39,319 p=16709 u=root |  fatal: [10.20.254.237]: FAILED! => {"changed": false, "module_stderr": "/bin/sh: /usr/bin/python: No such file or directory\n", "module_stdout": "", "msg": "MODULE FAILURE", "rc": 127}
+2022-06-17 00:24:39,322 p=16709 u=root |  	to retry, use: --limit @/home/ubuntu/ansible/ansible-playbook-std-build/logs/retry/std-linux-build.retry
+
+2022-06-17 00:24:39,344 p=16709 u=root |   ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2022-06-17 00:24:39,345 p=16709 u=root |  10.20.254.237              : ok=0    changed=0    unreachable=0    failed=1   
+2022-06-17 00:24:39,345 p=16709 u=root |  Friday 17 June 2022  00:24:39 +0000 (0:00:00.693)       0:00:00.785 *********** 
+2022-06-17 00:24:39,345 p=16709 u=root |  =============================================================================== 
+2022-06-17 00:24:39,345 p=16709 u=root |  Gathering Facts --------------------------------------------------------------------------------------------------------------------------------------------------- 0.69s

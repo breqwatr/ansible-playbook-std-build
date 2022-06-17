@@ -1,0 +1,6 @@
+---
+- name: create ArcusAdmin User
+  user: name=arcusadmin comment="Breqwatr Account" createhome=yes
+
+- name: Set authorized key taken from file
+  authorized_key: user=arcusadmin state=present key="{{ lookup('file', 'id_rsa.pub') }}"

@@ -6,19 +6,19 @@
 #
 # Common roles, these are applied regardless of the end use.
 #
-  - { role: geerlingguy.repo-epel, tags: [ 'common' ] }
-  - { role: breqwatr-role-common,     tags: [ 'common' ] }
-  - { role: geerlingguy.ntp,       tags: [ 'common' ] }
-  - { role: arillso.logrotate,     tags: [ 'common' ] }
+#  - { role: geerlingguy.repo-epel, tags: [ 'common' ] }
+#  - { role: breqwatr-role-common,  tags: [ 'common' ] }
+#  - { role: geerlingguy.ntp,       tags: [ 'common' ] }
+#  - { role: arillso.logrotate,     tags: [ 'common' ] }
 
 #
 # Security focused roles
 #
-  - { role: os-hardening,          tags: [ 'security' ] }
-  - { role: ssh-hardening,         tags: [ 'security' ] }
+#  - { role: os_hardening,          tags: [ 'security' ] }
+#  - { role: ssh_hardening,         tags: [ 'security' ] }
 
 #
 # Need to fix ssh-hardening
 #
-  - { role: breqwatr-role-motd,         tags: [ 'common' ] }
-  - { role: breqwatr-role-users,        tags: [ 'common' ] }
+#  - { role: motd,     tags: [ 'common' ] }
+#  - { role: breqwatr-role-users,    tags: [ 'common' ] }
