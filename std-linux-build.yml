@@ -6,19 +6,17 @@
 #
 # Common roles, these are applied regardless of the end use.
 #
-#  - { role: geerlingguy.repo-epel, tags: [ 'common' ] }
-#  - { role: breqwatr-role-common,  tags: [ 'common' ] }
-#  - { role: geerlingguy.ntp,       tags: [ 'common' ] }
-#  - { role: arillso.logrotate,     tags: [ 'common' ] }
-
+  - { role: breqwatr-role-users,    tags: [ 'common', 'always' ] }
+  - { role: breqwatr-role-common,  tags: [ 'common', 'always' ] }
+  - { role: geerlingguy.ntp,       tags: [ 'common' ] }
+  - { role: arillso.logrotate,     tags: [ 'common' ] }
+  - { role: motd,     tags: [ 'common' ] }
+#
+# OS specific Roles
+#
+  - { role: geerlingguy.repo-epel, tags: [ 'centos' ], when: ansible_os_family == 'RedHat'}
 #
 # Security focused roles
 #
-#  - { role: os_hardening,          tags: [ 'security' ] }
-#  - { role: ssh_hardening,         tags: [ 'security' ] }
-
-#
-# Need to fix ssh-hardening
-#
-#  - { role: motd,     tags: [ 'common' ] }
-#  - { role: breqwatr-role-users,    tags: [ 'common' ] }
+  - { role: os_hardening,          tags: [ 'common', 'security' ] }
+  - { role: ssh_hardening,         tags: [ 'common', 'security' ] }

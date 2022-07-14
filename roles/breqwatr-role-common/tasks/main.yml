@@ -5,37 +5,70 @@
     name: '*'
     state: latest
   when: ansible_os_family == "RedHat"
+
 # Debian Family upgrade
 - name: Update repositories cache
   apt:
     update_cache: yes
   when: ansible_os_family == "Debian"
+
 - name: Update all packages to their latest version
   apt:
     name: "*"
     state: latest
   when: ansible_os_family == "Debian"
-- name: Upgrade the OS (apt-get dist-upgrade)
-  apt:
-    upgrade: dist
-  when: ansible_os_family == "Debian"
-- name: add docker repository (CentOS)
-  yum_repository:
-    name: epel
-    description: EPEL YUM repo
-    baseurl: https://download.docker.com/linux/centos/docker-ce.repo
-  when: ansible_os_family == "RedHat"
-- name: Add docker repository into sources list
-  ansible.builtin.apt_repository:
-    repo: deb https://download.docker.com/linux/debian stable
+
+- name: Add Docker GPG apt Key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
     state: present
   when: ansible_os_family == "Debian"
+
+- name: Add Docker Repository
+  apt_repository:
+    repo: deb https://download.docker.com/linux/ubuntu focal stable
+    state: present
+  when: ansible_os_family == "Debian"
+
+- name: set mydistribution
+  ansible.builtin.set_fact:
+    mydistribution: "{{ 'rhel' if (ansible_distribution == 'Red Hat Enterprise Linux') else (ansible_distribution | lower) }}"
+  when: ansible_os_family == "RedHat"
+
+- name: Add signing key
+  ansible.builtin.rpm_key:
+    key: "https://download.docker.com/linux/{{ mydistribution }}/gpg"
+    state: present
+  when: ansible_os_family == "RedHat"
+
+- name: Add repository into repo.d list
+  ansible.builtin.yum_repository:
+    name: docker
+    description: docker repository
+    baseurl: "https://download.docker.com/linux/{{ mydistribution }}/$releasever/$basearch/stable"
+    enabled: true
+    gpgcheck: true
+    gpgkey: "https://download.docker.com/linux/{{ mydistribution }}/gpg"
+  when: ansible_os_family == "RedHat"
+
 - name: install latest version of docker and python3
   ansible.builtin.package:
     name:
       - python3
+      - python3-pip
       - docker-ce
       - docker-ce-cli
       - containerd.io
       - docker-compose-plugin
     state: latest
+    update_cache: true
+
+- name: Install Docker Module for Python
+  pip:
+    name: docker
+
+- name: Start Docker
+  ansible.builtin.service:
+    name: "docker"
+    enabled: true
+    state: started

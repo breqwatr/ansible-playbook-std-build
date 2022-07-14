@@ -18,13 +18,6 @@
   src: https://github.com/justereseau/ansible-role-linux-motd.git
   scm: git
 
-- name: breqwatr-role-users
-  src: ./roles/breqware-role-users/
-
-- name: breqwatr-role-common
-  src: git@github.com:breqwatr/breqwatr-role-common.git
-  scm: git
-
 - name: ansible-disable-selinux
   src: https://github.com/stardata/ansible-disable-selinux.git
   scm: git
